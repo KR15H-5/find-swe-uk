@@ -1,0 +1,1097 @@
+export interface Internship {
+    id: number;
+    company: string;
+    logo: string
+    position: string;
+    location: string;
+    deadline: string;
+    applicationLink: string;
+  }
+  
+  export async function fetchInternships(): Promise<Internship[]> {
+    // In a real application, this would be an API call to your backend
+    // For now, we'll return a static list of internships
+    return [
+        {
+            id: 1,
+            company: "Point72",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Point72logo.png",
+            position: "2024 Software Engineer Internship",
+            location: "London, UK",
+            deadline: "2024-08-01",
+            applicationLink: "https://bit.ly/3m8H8CY"
+          },
+          {
+            id: 2,
+            company: "Capstone",
+            logo: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Capstone_Investment_Advisors.png",
+            position: "2025 Summer Internship - Software Engineering",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3ZGMqDD"
+          },
+          {
+            id: 3,
+            company: "BlackRock",
+            logo: "/logos/blackrock.png",
+            position: "Summer Internship Program - EMEA",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/410zFop"
+          },
+          {
+            id: 4,
+            company: "Man Group",
+            logo: "/logos/man-group.png",
+            position: "Technology Summer Internship",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/40Jh9RK"
+          },
+          {
+            id: 5,
+            company: "GSA Capital",
+            logo: "/logos/gsa-capital.png",
+            position: "Software Developer - Intern",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/4fuuzsG"
+          },
+          {
+            id: 6,
+            company: "DRW",
+            logo: "/logos/drw.png",
+            position: "Software Developer Intern",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3KqdRwu"
+          },
+          {
+            id: 7,
+            company: "Castleton Commodities International",
+            logo: "/logos/castleton-commodities.png",
+            position: "Internship (Summer 2025)",
+            location: "London, UK",
+            deadline: "2024-10-08",
+            applicationLink: "https://bit.ly/42Zq0Ap"
+          },
+          {
+            id: 8,
+            company: "The Trade Desk",
+            logo: "/logos/the-trade-desk.png",
+            position: "2025 Summer Intern - Software Engineer",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/4d030pr"
+          },
+          {
+            id: 9,
+            company: "Marshall Wace",
+            logo: "/logos/marshall-wace.png",
+            position: "Technology Intern - 2025",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3t46eX2"
+          },
+          {
+            id: 10,
+            company: "Palantir",
+            logo: "/logos/palantir.png",
+            position: "Software Engineer, Internship",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/4gkWXxL"
+          },
+          {
+            id: 11,
+            company: "Millennium Management",
+            logo: "/logos/millennium-management.png",
+            position: "Software Engineer Summer Intern",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/40SBsMs"
+          },
+          {
+            id: 12,
+            company: "Talos",
+            logo: "/logos/talos.png",
+            position: "Software Engineering Intern",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/46yfdPE"
+          },
+          {
+            id: 13,
+            company: "BNP Paribas",
+            logo: "/logos/bnp-paribas.png",
+            position: "2025 Summer Internship - Technology",
+            location: "London, UK",
+            deadline: "2024-09-22",
+            applicationLink: "https://bit.ly/3lYgwos"
+          },
+          {
+            id: 14,
+            company: "Citadel",
+            logo: "/logos/citadel.png",
+            position: "Software Engineer - Intern (Europe)",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3nMbE6f"
+          },
+          {
+            id: 15,
+            company: "Jane Street",
+            logo: "/logos/jane-street.png",
+            position: "Software Engineer Internship",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/40LeW8n"
+          },
+          {
+            id: 16,
+            company: "Goldman Sachs",
+            logo: "/logos/goldman-sachs.png",
+            position: "2025 Summer Analyst Programme",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "http://bit.ly/3Mfyq0k"
+          },
+          {
+            id: 17,
+            company: "Bank of America",
+            logo: "/logos/bank-of-america.png",
+            position: "Software Engineer Summer 2025 Analyst",
+            location: "London, UK",
+            deadline: "2024-10-25",
+            applicationLink: "https://bit.ly/3zwxb5G"
+          },
+          {
+            id: 18,
+            company: "Jump Trading",
+            logo: "/logos/jump-trading.png",
+            position: "Campus Software Engineer (Intern)",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3U8FePj"
+          },
+          {
+            id: 19,
+            company: "Optiver",
+            logo: "/logos/optiver.png",
+            position: "Software Engineer Internship (2025 Start)",
+            location: "Amsterdam, NL",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/412NPWf"
+          },
+          {
+            id: 20,
+            company: "PIMCO",
+            logo: "/logos/pimco.png",
+            position: "2025 Summer Internship - Technology Analyst",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3m4gifh"
+          },
+          {
+            id: 21,
+            company: "Squarepoint Capital",
+            logo: "/logos/squarepoint-capital.png",
+            position: "Intern Software Development - Summer 2025",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3yoemEK"
+          },
+          {
+            id: 22,
+            company: "UBS",
+            logo: "/logos/ubs.png",
+            position: "2025 Summer Internship Program - GOTO Technology",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "http://bit.ly/3ZEGPh4"
+          },
+          {
+            id: 23,
+            company: "Nomura",
+            logo: "/logos/nomura.png",
+            position: "Information Technology - Summer Internship",
+            location: "London, UK",
+            deadline: "2024-12-01",
+            applicationLink: "https://bit.ly/40L5u4T"
+          },
+          {
+            id: 24,
+            company: "J.P. Morgan",
+            logo: "/logos/jp-morgan.png",
+            position: "2025 Software Engineer Programme",
+            location: "London, UK",
+            deadline: "2024-11-03",
+            applicationLink: "http://bit.ly/40GchwM"
+          },
+          {
+            id: 25,
+            company: "Macquarie Group",
+            logo: "/logos/macquarie-group.png",
+            position: "2025 Summer Internship Programme",
+            location: "London, UK",
+            deadline: "2024-10-25",
+            applicationLink: "https://bit.ly/3McnOj3"
+          },
+          {
+            id: 26,
+            company: "Morgan Stanley",
+            logo: "/logos/morgan-stanley.png",
+            position: "2025 Technology Summer Analyst Program",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "http://bit.ly/3KuiTIX"
+          },
+          {
+            id: 27,
+            company: "Maven Securities",
+            logo: "/logos/maven-securities.png",
+            position: "Software Developer Summer Internship 2025",
+            location: "London, UK",
+            deadline: "2024-10-21",
+            applicationLink: "https://bit.ly/3ZO7OXK"
+          },
+          {
+            id: 28,
+            company: "Baillie Gifford",
+            logo: "/logos/baillie-gifford.png",
+            position: "Summer Internship 2025",
+            location: "London, UK",
+            deadline: "2024-10-28",
+            applicationLink: "https://bit.ly/3U8Q4oA"
+          },
+          {
+            id: 29,
+            company: "Zurich Insurance",
+            logo: "/logos/zurich-insurance.png",
+            position: "Technology Management Summer Internship 2025",
+            location: "London, UK",
+            deadline: "2024-10-20",
+            applicationLink: "https://bit.ly/45NmlXa"
+          },
+          {
+            id: 30,
+            company: "Cisco",
+            logo: "/logos/cisco.png",
+            position: "Software Engineer Internship - Summer 2025",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/4e34OhM"
+          },
+          {
+            id: 31,
+            company: "G-Research",
+            logo: "/logos/g-research.png",
+            position: "Software Engineering Internship",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/436m14R"
+          },
+          {
+            id: 32,
+            company: "Susquehanna International Group",
+            logo: "/logos/sig.png",
+            position: "Software Development Summer Internship 2025",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3Ktfie5"
+          },
+          {
+            id: 33,
+            company: "Epic Games",
+            logo: "/logos/epic-games.png",
+            position: "Intern",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/4d2sAcI"
+          },
+          {
+            id: 34,
+            company: "Softwire",
+            logo: "/logos/softwire.png",
+            position: "Software Development Internship",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3AW3m28"
+          },
+          {
+            id: 35,
+            company: "BAE Systems",
+            logo: "/logos/bae-systems.png",
+            position: "Summer Internship - Software Engineer",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/4eggMFf"
+          },
+          {
+            id: 36,
+            company: "Amazon",
+            logo: "/logos/amazon.png",
+            position: "2025 Software Dev Engineer Intern",
+            location: "London, UK- Multiple Locations",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/41ifin1"
+          },
+          {
+            id: 37,
+            company: "Mizuho",
+            logo: "/logos/mizuho.png",
+            position: "IT Summer Internship",
+            location: "London, UK",
+            deadline: "2024-10-11",
+            applicationLink: "https://bit.ly/3nHtBTs"
+          },
+          {
+            id: 38,
+            company: "Wells Fargo",
+            logo: "/logos/wells-fargo.png",
+            position: "EMEA Technology Summer Analyst",
+            location: "London, UK",
+            deadline: "2024-11-15",
+            applicationLink: "https://bit.ly/3m9HjOE"
+          },
+          {
+            id: 39,
+            company: "IMC Trading",
+            logo: "/logos/imc-trading.png",
+            position: "Software Engineer Intern",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3XI4aip"
+          },
+          {
+            id: 40,
+            company: "Capital One",
+            logo: "/logos/capital-one.png",
+            position: "Technology Intern",
+            location: "London, UK/Nottingham, UK",
+            deadline: "2024-11-04",
+            applicationLink: "https://bit.ly/46dbd62"
+          },
+          {
+            id: 41,
+            company: "Deloitte",
+            logo: "/logos/deloitte.png",
+            position: "Summer Vacation Scheme - Tax Technology and Innovation",
+            location: "London, UK",
+            deadline: "N/A",
+            applicationLink: "https://bit.ly/3KcUoPf"
+          },
+          {
+            id: 42,
+            company: "Deutsche Bank",
+            logo: "/logos/deutsche-bank.png",
+            position: "Internship Programme - Technology",
+            location: "London, UK",
+            deadline: "2024-11-24",
+            applicationLink: "http://bit.ly/3UaxIDR"
+          },
+      {
+        id: 43,
+        company: "Galaxy",
+        logo: "/logos/galaxy.png",
+        position: "2025 Blockchain Engineering Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 44,
+        company: "MUFG",
+        logo: "/logos/mufg.png",
+        position: "2025 Summer Internship Programme: Technology",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 45,
+        company: "Accelercom",
+        logo: "/logos/accelercom.png",
+        position: "Summer Internship Python 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 46,
+        company: "Addepar",
+        logo: "/logos/addepar.png",
+        position: "Software Engineer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 47,
+        company: "BP",
+        logo: "/logos/bp.png",
+        position: "Summer Internship - Software Engineering",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 48,
+        company: "Financial Conduct Authority",
+        logo: "/logos/fca.png",
+        position: "2025 Summer Internship Programme: Technology",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 49,
+        company: "Marsh McLennan",
+        logo: "/logos/marsh-mclennan.png",
+        position: "Tech Support Summer Internship 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 50,
+        company: "National Highways",
+        logo: "/logos/national-highways.png",
+        position: "Summer Internship - Digital and IT Services",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 51,
+        company: "Netcraft",
+        logo: "/logos/netcraft.png",
+        position: "Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 52,
+        company: "Nutanix",
+        logo: "/logos/nutanix.png",
+        position: "Software Engineer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 53,
+        company: "Terra",
+        logo: "/logos/terra.png",
+        position: "AI and Engineering Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 54,
+        company: "Two Sigma",
+        logo: "/logos/two-sigma.png",
+        position: "Software Engineering Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 55,
+        company: "Universal Music Group",
+        logo: "/logos/universal-music-group.png",
+        position: "IT Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 56,
+        company: "D.E. Shaw",
+        logo: "/logos/de-shaw.png",
+        position: "Systems: Engineering Intern - Summer 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 57,
+        company: "RBC Capital Markets",
+        logo: "/logos/rbc-capital-markets.png",
+        position: "2025 Summer Analyst - Quantitative Technology",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 58,
+        company: "HSBC",
+        logo: "/logos/hsbc.png",
+        position: "Digital Innovation Summer Internship 2023-2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 59,
+        company: "BNY Mellon",
+        logo: "/logos/bny-mellon.png",
+        position: "2025 Summer Internship Program - Engineering",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 60,
+        company: "Hudson River Trading",
+        logo: "/logos/hudson-river-trading.png",
+        position: "Software Engineering Internship - Summer 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 61,
+        company: "Barclays",
+        logo: "/logos/barclays.png",
+        position: "Technology Summer Internship Programme 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 62,
+        company: "Balyasny Asset Management",
+        logo: "/logos/balyasny-asset-management.png",
+        position: "Software Engineering - 2025 Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 63,
+        company: "American Express",
+        logo: "/logos/american-express.png",
+        position: "Internship - Technology Software Engineer",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 64,
+        company: "EY",
+        logo: "/logos/ey.png",
+        position: "Summer Internship 2025 - Technology Consulting",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 65,
+        company: "Natwest Markets",
+        logo: "/logos/natwest-markets.png",
+        position: "Internal Audit, Technology - Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 66,
+        company: "Schonfeld",
+        logo: "/logos/schonfeld.png",
+        position: "2025 Network Engineering Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 67,
+        company: "Willis Towers Watson",
+        logo: "/logos/willis-towers-watson.png",
+        position: "2025 Software Developer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 68,
+        company: "M&G",
+        logo: "/logos/m-and-g.png",
+        position: "Technology Summer Internship (London)",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 69,
+        company: "Textron",
+        logo: "/logos/textron.png",
+        position: "2025 IT Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 70,
+        company: "TD Securities",
+        logo: "/logos/td-securities.png",
+        position: "Intern Tech Summer Programme 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 71,
+        company: "Cloudflare",
+        logo: "/logos/cloudflare.png",
+        position: "Software Engineer - Intern (Summer 2025)",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 72,
+        company: "MathWorks",
+        logo: "/logos/mathworks.png",
+        position: "Software Development Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 73,
+        company: "Tesco",
+        logo: "/logos/tesco.png",
+        position: "Software Engineering Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 74,
+        company: "McLaren",
+        logo: "/logos/mclaren.png",
+        position: "IT Internship Scheme",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 75,
+        company: "TP ICAP",
+        logo: "/logos/tp-icap.png",
+        position: "Technology Summer Internship 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 76,
+        company: "Blackstone",
+        logo: "/logos/blackstone.png",
+        position: "Software Developer Summer Analyst",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 77,
+        company: "MarketAxess",
+        logo: "/logos/marketaxess.png",
+        position: "Software Engineering Intern 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 78,
+        company: "FactSet",
+        logo: "/logos/factset.png",
+        position: "Software Engineer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 79,
+        company: "Qube RT",
+        logo: "/logos/qube-rt.png",
+        position: "2025 - Internship - Software Engineering",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 80,
+        company: "Cisco",
+        logo: "/logos/cisco.png",
+        position: "Software Engineer - Micro Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 81,
+        company: "PA Consulting",
+        logo: "/logos/pa-consulting.png",
+        position: "Software Engineering - Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 82,
+        company: "HME",
+        logo: "/logos/hme.png",
+        position: "Software Engineering Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 83,
+        company: "BGC Partners",
+        logo: "/logos/bgc-partners.png",
+        position: "Technology Summer Internship - Development",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 84,
+        company: "Frazer-Nash Consultancy",
+        logo: "/logos/frazer-nash-consultancy.png",
+        position: "Data Science & Software Summer Intern 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 85,
+        company: "Vanguard",
+        logo: "/logos/vanguard.png",
+        position: "Technology Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 86,
+        company: "QinetiQ",
+        logo: "/logos/qinetiq.png",
+        position: "IT Engineer - Summer Placement",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 87,
+        company: "Rolls-Royce",
+        logo: "/logos/rolls-royce.png",
+        position: "Technology Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 88,
+        company: "Tradeweb",
+        logo: "/logos/tradeweb.png",
+        position: "Summer Internship 2025 - Technology Division",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 89,
+        company: "TikTok",
+        logo: "/logos/tiktok.png",
+        position: "System Software Engineer, Summer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 90,
+        company: "Siemens",
+        logo: "/logos/siemens.png",
+        position: "Software Engineer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 91,
+        company: "UK Atomic Energy Authority",
+        logo: "/logos/uk-atomic-energy-authority.png",
+        position: "Software Engineering - Summer Placement 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 92,
+        company: "BT",
+        logo: "/logos/bt.png",
+        position: "Summer Placement - Research & Network Strategy",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 93,
+        company: "Jefferies",
+        logo: "/logos/jefferies.png",
+        position: "2025 Information Technology Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 94,
+        company: "Graphcore",
+        logo: "/logos/graphcore.png",
+        position: "Intern 2025 - Software",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 95,
+        company: "Renishaw",
+        logo: "/logos/renishaw.png",
+        position: "Software Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 96,
+        company: "Crédit Agricole",
+        logo: "/logos/credit-agricole.png",
+        position: "Summer Internship Programme 2025 - IT",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 97,
+        company: "Jacobs",
+        logo: "/logos/jacobs.png",
+        position: "Geospatial & GIS - Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 98,
+        company: "King",
+        logo: "/logos/king.png",
+        position: "Summer Technology",    
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 99,
+        company: "Five AI",
+        logo: "/logos/five-ai.png",
+        position: "Software Engineer - Summer Internship 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 100,
+        company: "Verisk",
+        logo: "/logos/verisk.png",
+        position: "Tech - 2025 Summer Internship Program",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 101,
+        company: "Ripple",
+        logo: "/logos/ripple.png",
+        position: "Software Engineer Intern (Summer)",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 102,
+        company: "Speechmatics",
+        logo: "/logos/speechmatics.png",
+        position: "ML Software Engineering Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 103,
+        company: "NXP Semiconductors",
+        logo: "/logos/nxp-semiconductors.png",
+        position: "Internship - Software Engineering - 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 104,
+        company: "Mastercard",
+        logo: "/logos/mastercard.png",
+        position: "Software Engineering Intern, Summer 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 105,
+        company: "HP",
+        logo: "/logos/hp.png",
+        position: "Software Engineer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 106,
+        company: "Quantcast",
+        logo: "/logos/quantcast.png",
+        position: "Software Engineering Intern - Summer 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 107,
+        company: "TE Connectivity",
+        logo: "/logos/te-connectivity.png",
+        position: "Software Engineer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 108,
+        company: "FSP",
+        logo: "/logos/fsp.png",
+        position: "Intern Software Developer",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 109,
+        company: "Centrica",
+        logo: "/logos/centrica.png",
+        position: "Software Engineering Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 110,
+        company: "Caxton Associates",
+        logo: "/logos/caxton-associates.png",
+        position: "Summer Internship Programme (Quant and Tech)",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 111,
+        company: "S&P Global",
+        logo: "/logos/sp-global.png",
+        position: "Summer Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 112,
+        company: "ICBC Standard Bank",
+        logo: "/logos/icbc-standard-bank.png",
+        position: "Summer Intern - Technology",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 113,
+        company: "Thales",
+        logo: "/logos/thales.png",
+        position: "Software Engineering Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 114,
+        company: "Hiscox",
+        logo: "/logos/hiscox.png",
+        position: "Technology Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 115,
+        company: "PredictX",
+        logo: "/logos/predictx.png",
+        position: "Paid Summer 2025 Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 116,
+        company: "Cboe Global Markets",
+        logo: "/logos/cboe-global-markets.png",
+        position: "Intern",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 117,
+        company: "Spotify",
+        logo: "/logos/spotify.png",
+        position: "2025 Summer Internship",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 118,
+        company: "KPMG",
+        logo: "/logos/kpmg.png",
+        position: "Vacation Technology - Technology Consulting",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 119,
+        company: "Scotiabank",
+        logo: "/logos/scotiabank.png",
+        position: "Technology Summer Internship 2025",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+      {
+        id: 120,
+        company: "The Walt Disney Company",
+        logo: "/logos/the-walt-disney-company.png",
+        position: "Technology & IT Internships",
+        location: "London, UK",
+        deadline: "N/A",
+        applicationLink: "N/A"
+      },
+    ];
+  }
+  
