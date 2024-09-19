@@ -81,6 +81,9 @@ export default function Home() {
     });
   }, []);
 
+  // Sort internships by id in descending order
+  const sortedInternships = internships.sort((a, b) => b.id - a.id);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-100">
       <div className="absolute top-4 right-4 flex items-center space-x-2">
@@ -126,7 +129,7 @@ export default function Home() {
             <LoadingSpinner />
           ) : (
             <Suspense fallback={<LoadingSpinner />}>
-              <InternshipList internships={internships} searchTerm={searchTerm} />
+              <InternshipList internships={sortedInternships} searchTerm={searchTerm} />
             </Suspense>
           )}
         </motion.div>
